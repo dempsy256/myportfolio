@@ -1,0 +1,8 @@
+{
+  // Root config — delegates to app-specific configs via references
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" }
+  ]
+}
+
