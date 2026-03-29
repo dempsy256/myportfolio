@@ -32,7 +32,7 @@ const HeroSection = () => {
 
           {/* Headline */}
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.05] tracking-tight text-balance">
-            <span className="gradient-text">Namirembe Redemptor</span>
+            <span className="gradient-text">Namirembe Redemptor</span><br />
             Helping Entrepreneurs{" "}
             <span className="gradient-text">Dreams</span> Come To Life
           </h1>
