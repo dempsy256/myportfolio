@@ -20,7 +20,7 @@ const AboutSection = () => {
           </h2>
           <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p>
-              I'm a full-stack developer with a passion for turning complex problems into elegant, user-centric solutions. With experience spanning frontend frameworks, backend architectures, and cloud infrastructure, I bring ideas from concept to deployment.
+              I'm a full-stack developer with a passion for turning complex problems into elegant, user-centric solutions. With experience spanning frontend frameworks, and backend architectures. I bring ideas from concept to deployment.
             </p>
             <p>
               Whether it's a startup MVP, an enterprise dashboard, or an IoT platform, I approach every project with the same rigor — clean code, scalable architecture, and relentless attention to the user experience.
@@ -30,7 +30,7 @@ const AboutSection = () => {
           <div className="grid grid-cols-3 gap-4 pt-6">
             {[
               { num: "2+", label: "Years Experience" },
-              { num: "3+", label: "Projects Shipped" },
+              { num: "2+", label: "Projects Shipped" },
               { num: "2+", label: "Happy Clients" },
             ].map((stat, i) => (
               <motion.div
