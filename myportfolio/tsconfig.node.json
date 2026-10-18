@@ -1,0 +1,16 @@
+{
+  "extends": "./tsconfig.json", // Still inherits the basics
+  "compilerOptions": {
+    "composite": true,         // Allows other configs to reference this
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "types": ["node"]          // Tells TS: "I'm running in Node.js!"
+  },
+  "include": [
+    "vite.config.ts",          // The main file this config cares about
+    "vitest.config.ts",
+    "tailwind.config.ts",
+    "eslint.config.js",
+    "postcss.config.js"
+  ]
+}
