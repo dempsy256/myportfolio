@@ -5,28 +5,18 @@ import { Button } from "@/components/ui/button";
 
 const projects = [
   {
-    title: "Smart Irrigation IoT Dashboard",
-    description: "Real-time monitoring dashboard for smart agriculture, featuring sensor data visualization and automated irrigation controls.",
-    tags: ["React", "Node.js", "MQTT", "Chart.js"],
-    color: "from-emerald-500/20 to-teal-500/10",
+    title: "VoltsEdge",
+    description: "A modern energy technology platform delivering innovative solutions for power management and sustainable energy systems.",
+    tags: ["React", "TypeScript", "Tailwind", "Vite"],
+    color: "from-yellow-500/20 to-amber-500/10",
+    link: "https://voltsedge.netlify.app/",
   },
   {
-    title: "Ride-Request App Interface",
-    description: "A sleek ride-hailing mobile-first web app with live map tracking, fare estimation, and driver matching.",
-    tags: ["Next.js", "Mapbox", "WebSocket", "Stripe"],
-    color: "from-blue-500/20 to-cyan-500/10",
-  },
-  {
-    title: "Enterprise ERP System",
-    description: "Full-featured enterprise resource planning system with HR, inventory, finance modules and role-based access.",
-    tags: ["React", "Python", "PostgreSQL", "Docker"],
-    color: "from-purple-500/20 to-pink-500/10",
-  },
-  {
-    title: "E-Commerce Platform",
-    description: "High-performance storefront with product search, cart management, payment processing, and analytics dashboard.",
-    tags: ["Next.js", "Supabase", "Stripe", "Tailwind"],
-    color: "from-orange-500/20 to-red-500/10",
+    title: "Crocus Africa",
+    description: "Premium all-in-one platform for conferences, exhibitions, and networking summits across Africa with event discovery and management.",
+    tags: ["React", "TypeScript", "Tailwind", "Vite"],
+    color: "from-rose-500/20 to-fuchsia-500/10",
+    link: "https://crocusapp.com/",
   },
 ];
 
@@ -43,8 +33,7 @@ const PortfolioSection = () => {
           transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
           className="mb-16"
         >
-          <p className="text-xs uppercase tracking-[0.2em] text-primary mb-3">Selected Work</p>
-          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">Projects that speak for themselves</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">Projects</h2>
         </motion.div>
 
         <div className="flex gap-6 overflow-x-auto pb-6 snap-x snap-mandatory scrollbar-hide -mx-4 px-4">
@@ -70,9 +59,17 @@ const PortfolioSection = () => {
                       </span>
                     ))}
                   </div>
-                  <Button variant="ghost" size="sm" className="w-fit gap-1 text-primary hover:text-primary/80 p-0 h-auto">
-                    View Case Study <ArrowUpRight size={14} />
-                  </Button>
+                  {project.link ? (
+                    <a href={project.link} target="_blank" rel="noopener noreferrer">
+                      <Button variant="ghost" size="sm" className="w-fit gap-1 text-primary hover:text-primary/80 p-0 h-auto">
+                        View Case Study <ArrowUpRight size={14} />
+                      </Button>
+                    </a>
+                  ) : (
+                    <Button variant="ghost" size="sm" className="w-fit gap-1 text-primary hover:text-primary/80 p-0 h-auto">
+                      View Case Study <ArrowUpRight size={14} />
+                    </Button>
+                  )}
                 </div>
               </div>
             </motion.div>

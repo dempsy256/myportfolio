@@ -1,6 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { Layers, Code2, Database, Plug, Palette, Server } from "lucide-react";
+import { Code2, Palette } from "lucide-react";
 
 const services = [
   {
@@ -16,34 +16,6 @@ const services = [
     description: "End-to-end web applications with React, Next.js, Node.js, and Python — built for scale.",
     stat: 50,
     statLabel: "Projects Delivered",
-  },
-  {
-    icon: Database,
-    title: "Database Architecture",
-    description: "Robust data models with PostgreSQL, MongoDB, and real-time sync using Supabase.",
-    stat: 99,
-    statLabel: "Uptime SLA",
-  },
-  {
-    icon: Plug,
-    title: "API Integration",
-    description: "Seamless third-party integrations — payment gateways, CRMs, analytics, and custom REST/GraphQL APIs.",
-    stat: 40,
-    statLabel: "APIs Integrated",
-  },
-  {
-    icon: Server,
-    title: "Cloud & DevOps",
-    description: "Deployments on AWS, Vercel, and Docker with CI/CD pipelines and monitoring.",
-    stat: 30,
-    statLabel: "Cloud Deployments",
-  },
-  {
-    icon: Layers,
-    title: "Technical Consulting",
-    description: "Architecture reviews, technology selection, and roadmap planning for startups and enterprises.",
-    stat: 20,
-    statLabel: "Startups Advised",
   },
 ];
 
