@@ -2,6 +2,7 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import crocusAfricaImg from "@/assets/crocus-africa.png";
 
 const projects = [
   {
@@ -17,6 +18,7 @@ const projects = [
     tags: ["React", "TypeScript", "Tailwind", "Vite"],
     color: "from-rose-500/20 to-fuchsia-500/10",
     link: "https://crocusapp.com/",
+    image: crocusAfricaImg,
   },
 ];
 
@@ -46,8 +48,16 @@ const PortfolioSection = () => {
               className="flex-shrink-0 w-[340px] sm:w-[400px] snap-start"
             >
               <div className="glass-card hover-lift h-full flex flex-col overflow-hidden group">
-                <div className={`h-48 bg-gradient-to-br ${project.color} flex items-center justify-center`}>
-                  <span className="text-4xl opacity-30 group-hover:opacity-50 transition-opacity">{"</>"}</span>
+                <div className={`h-48 bg-gradient-to-br ${project.color} flex items-center justify-center overflow-hidden relative`}>
+                  {project.image ? (
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                    />
+                  ) : (
+                    <span className="text-4xl opacity-30 group-hover:opacity-50 transition-opacity">{"</>"}</span>
+                  )}
                 </div>
                 <div className="p-6 flex flex-col flex-1">
                   <h3 className="text-lg font-semibold mb-2">{project.title}</h3>
