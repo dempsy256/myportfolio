@@ -3,6 +3,7 @@ import { useRef } from "react";
 import { ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import crocusAfricaImg from "@/assets/crocus-africa.png";
+import voltsEdgeImg from "@/assets/voltsedge.png";
 
 const projects = [
   {
@@ -11,6 +12,7 @@ const projects = [
     tags: ["React", "TypeScript", "Tailwind", "Vite"],
     color: "from-yellow-500/20 to-amber-500/10",
     link: "https://voltsedge.netlify.app/",
+    image: voltsEdgeImg,
   },
   {
     title: "Crocus Africa",
